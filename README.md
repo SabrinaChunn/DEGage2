@@ -1,1 +1,60 @@
 # DEGage2.0
+The DEGage2.0 package allows for differential expression analysis of bulk RNA-seq data. Through the novel statistical model, DOTNB, the estimated difference between two negative binomial distributions would allow for the probabilistic determination of differentially expressed genes (DEGs). 
+
+# Installation 
+To install DEGage2.0 run the following command: 
+```
+git clone 
+```
+
+# Dependencies 
+To run DEGage2.0, the following libraries are required for installation: 
+```
+pandas -> 2.2.3
+numpy -> 2.1.2
+statsmodels -> 0.14.4
+scipy -> 1.14.1
+sympy -> 1.14.0
+mpmath -> 1.3.0
+```
+The following command can be ran to download each library: 
+```
+pip install pandas==2.2.3 numpy==2.1.2 statsmodels==0.14.4 scipy==1.14.1 sympy==1.14.0 mpmath==1.3.0
+```
+# DEGage2.0 Function
+
+**DEGage2_0**
+count_file -> The file location of the Bulk RNA-seq count data
+groups -> A numpy array containing 0s and 1s corresponding to the group identity of each column
+optimiser_file -> The file location of the optimized threshold combinations 
+DOTNB_thresh -> The threshold for filtering of the DOTNB test 
+perm_thresh -> The threshold for filtering of the permutation test 
+num_permutations -> The amount of permutations iterated within the permutation test 
+
+```
+def DEGage2_0(count_file,
+              groups,
+              optimizer_file = "NA",
+              DOTNB_thresh = -1,
+              perm_thresh = -1,
+              num_permutations = 1000):
+
+```
+
+
+
+# Example Usage 
+This sections provides samples usage of DEGage2.0 through the use of sample test files. 
+```
+#define numpy array corresponding to group sizes
+groups = np.array([0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1])
+
+#define input and optimization file
+count_file = r"C:\LocationOfFile\sim_data_10_10.csv"
+optimization_file = r"C:\LocationOfFile\optimal_thresholds.csv"
+
+#call DEGage2_0
+elapsed_time, results_df, DOTNB_thresh, perm_thresh = DEGage2_0(count_file, groups, optimizer_file = optimization_file)
+
+#display final results
+print("DEGs identified: \n", results_df)
