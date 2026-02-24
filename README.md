@@ -23,7 +23,7 @@ pip install pandas==2.2.3 numpy==2.1.2 statsmodels==0.14.4 scipy==1.14.1 sympy==
 ```
 # DEGage2.0 Function
 
-**DEGage2_0**
+**DEGage2_0**  
 count_file -> The file location of the Bulk RNA-seq count data  
 groups -> A numpy array containing 0s and 1s corresponding to the group identity of each column  
 optimiser_file -> The file location of the optimized threshold combinations  
