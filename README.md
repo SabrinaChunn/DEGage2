@@ -64,4 +64,3 @@ print("DEGs identified: \n", results_df)
 If you use the code, please cite the following paper:
 
 Chunn, S. J., Petrany, A., & Chen, Y. (2026). DEGage2.0: Model-based Comparative Analysis of Bulk RNA-seq Datasets. To_Be_Determined.
-```
