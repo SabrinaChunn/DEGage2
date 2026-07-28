@@ -1,4 +1,5 @@
 # DEGage2.0
+<img width="3232" height="689" alt="workflow_figure" src="https://github.com/user-attachments/assets/95fa03a4-6a8e-4e47-a343-a8b0f7a2fb80" />
 The DEGage2.0 package allows for differential expression analysis of bulk RNA-seq data. Through the novel statistical model, DOTNB, the estimated difference between two negative binomial distributions would allow for the probabilistic determination of differentially expressed genes (DEGs). 
 
 # Installation 
@@ -57,3 +58,10 @@ elapsed_time, results_df, DOTNB_thresh, perm_thresh = DEGage2_0(count_file, grou
 
 #display final results
 print("DEGs identified: \n", results_df)
+```
+
+# Citation  
+If you use the code, please cite the following paper:
+
+Chunn, S. J., Petrany, A., & Chen, Y. (2026). DEGage2.0: Model-based Comparative Analysis of Bulk RNA-seq Datasets. To_Be_Determined.
+```
