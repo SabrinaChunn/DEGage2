@@ -11,12 +11,11 @@ git clone git@github.com:SabrinaChunn/DEGage2.0.git
 # Dependencies 
 To run DEGage2.0, the following libraries are required for installation: 
 ```
-pandas -> 2.2.3
-numpy -> 2.1.2
-statsmodels -> 0.14.4
-scipy -> 1.14.1
-sympy -> 1.14.0
-mpmath -> 1.3.0
+numpy==2.5.1
+pandas==3.0.5
+scipy==1.18.0
+statsmodels==0.14.4
+sympy==1.14.0
 ```
 The following command can be ran to download each library: 
 ```
