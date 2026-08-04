@@ -1,5 +1,5 @@
 [build-system]
-requires = ["hatchling >= 1.26.0"]
+requires = ["hatchling>=1.8.0"]
 build-backend = "hatchling.build"
 
 [project]
@@ -7,7 +7,7 @@ name = "degage2"
 version = "0.1.0"
 description = "The DEGage2 package works to identify differentially expressed genes (DEGs) on bulk RNA-seq data through utilization of DOTNB"
 readme = "README.md"
-requires-python = ">=3.10" # Lowered slightly for broader compatibility (3.12 syntax is 3.10+ compatible)
+requires-python = ">=3.10" 
 
 authors = [
   { name = "Sabrina Chunn", email = "sabrinajchunn@gmail.com" },
