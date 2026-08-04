@@ -5,7 +5,7 @@ The DEGage2.0 package allows for differential expression analysis of bulk RNA-se
 # Installation 
 To install DEGage2.0 run the following command: 
 ```
-git clone git@github.com:SabrinaChunn/DEGage2.0.git
+pip install https://github.com/SabrinaChunn/DEGage2.git
 ```
 
 # Dependencies 
@@ -38,21 +38,23 @@ def DEGage2_0(count_file,
 
 ```
 
-
 # Example Usage 
 This sections provides samples usage of DEGage2.0 through the use of sample test files. 
 ```
-#define numpy array corresponding to group sizes
+import numpy as np
+import DEGage2
+
+# Define numpy array corresponding to group sizes
 groups = np.array([0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1])
 
-#define input and optimization file
+# Define input and optimization file
 count_file = r"C:\LocationOfFile\sim_data_10_10.csv"
 optimization_file = r"C:\LocationOfFile\optimal_thresholds.csv"
 
-#call DEGage2_0
-elapsed_time, results_df, DOTNB_thresh, perm_thresh = DEGage2_0(count_file, groups, optimizer_file = optimization_file)
+# Call DEGage2_0
+results_df = DEGage2.DEGage2_0(count_file, groups, optimizer_file = optimization_file)
 
-#display final results
+# Display final results
 print("DEGs identified: \n", results_df)
 ```
 
