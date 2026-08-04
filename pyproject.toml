@@ -1,0 +1,40 @@
+[build-system]
+requires = ["hatchling >= 1.26.0"]
+build-backend = "hatchling.build"
+
+[project]
+name = "degage2"
+version = "0.1.0"
+description = "The DEGage2 package works to identify differentially expressed genes (DEGs) on bulk RNA-seq data through utilization of DOTNB"
+readme = "README.md"
+requires-python = ">=3.10" # Lowered slightly for broader compatibility (3.12 syntax is 3.10+ compatible)
+
+authors = [
+  { name = "Sabrina Chunn", email = "sabrinajchunn@gmail.com" },
+  { name = "Alicia Petrany", email = "alicia.petrany@student.unimelb.edu.au" },
+  { name = "Yong Chen", email = "chenyong@rowan.edu" }
+]
+
+keywords = ["Bulk RNA-seq", "Differentially Expressed Genes", "Comparative Analysis", "DOTNB"]
+classifiers = [
+  "Development Status :: 3 - Alpha",
+  "Intended Audience :: Science/Research",
+  "Topic :: Scientific/Engineering :: Bio-Informatics",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+]
+
+# Essential dependencies automatically installed when someone runs pip install
+dependencies = [
+  "numpy>=1.22.0",
+  "pandas>=1.5.0",
+  "scipy>=1.9.0",
+  "statsmodels>=0.13.0",
+  "sympy>=1.10.0"
+]
+
+[project.urls]
+Homepage = "https://github.com/chenyongrowan/DEGage2"
+Repository = "https://github.com/chenyongrowan/DEGage2"
