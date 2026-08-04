@@ -48,8 +48,8 @@ import DEGage2
 groups = np.array([0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1])
 
 # Define input and optimization file
-count_file = r"C:\LocationOfFile\sim_data_10_10.csv"
-optimization_file = r"C:\LocationOfFile\optimal_thresholds.csv"
+count_file = r"C:\LocationOfFile\data\simulated_data_10x10.csv.csv"
+optimization_file = r"C:\LocationOfFile\data\optimal_thresholds.csv"
 
 # Call DEGage2_0
 results_df = DEGage2.DEGage2_0(count_file, groups, optimizer_file = optimization_file)
