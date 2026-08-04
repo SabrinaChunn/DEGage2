@@ -5,7 +5,7 @@ The DEGage2.0 package allows for differential expression analysis of bulk RNA-se
 # Installation 
 To install DEGage2.0 run the following command: 
 ```
-pip install https://github.com/SabrinaChunn/DEGage2.git
+pip install git+https://github.com/chenyongrowan/DEGage2.git
 ```
 
 # Dependencies 
